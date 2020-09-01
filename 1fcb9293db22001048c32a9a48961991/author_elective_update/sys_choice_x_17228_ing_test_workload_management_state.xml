@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_17228_ing_test_workload_management" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New</label>
+            <language>en</language>
+            <name>x_17228_ing_test_workload_management</name>
+            <sequence>1</sequence>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 14:17:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>87a5640bdb72001048c32a9a4896190b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 14:17:52</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In Progress</label>
+            <language>en</language>
+            <name>x_17228_ing_test_workload_management</name>
+            <sequence>2</sequence>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 14:18:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>64d5600bdb72001048c32a9a48961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 14:18:08</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed Complete</label>
+            <language>en</language>
+            <name>x_17228_ing_test_workload_management</name>
+            <sequence>3</sequence>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 14:20:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b6466c0bdb72001048c32a9a489619ab</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 14:20:22</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Return Submitter</label>
+            <language>en</language>
+            <name>x_17228_ing_test_workload_management</name>
+            <sequence>4</sequence>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 14:19:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c936640bdb72001048c32a9a489619f8</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 14:19:55</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Waiting</label>
+            <language>en</language>
+            <name>x_17228_ing_test_workload_management</name>
+            <sequence>5</sequence>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 14:20:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b966ac0bdb72001048c32a9a48961926</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 14:20:40</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Forecast</label>
+            <language>en</language>
+            <name>x_17228_ing_test_workload_management</name>
+            <sequence>6</sequence>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 14:21:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fa76a40bdb72001048c32a9a489619ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 14:21:01</sys_updated_on>
+            <value>8</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>At Legal</label>
+            <language>en</language>
+            <name>x_17228_ing_test_workload_management</name>
+            <sequence>7</sequence>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 14:21:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ca86e40bdb72001048c32a9a489619f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 14:21:14</sys_updated_on>
+            <value>9</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>x_17228_ing_test_workload_management</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 14:17:52</sys_created_on>
+            <sys_id>b0c5600bdb72001048c32a9a489619c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+            <sys_update_name>sys_choice_x_17228_ing_test_workload_management_state</sys_update_name>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 14:17:52</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

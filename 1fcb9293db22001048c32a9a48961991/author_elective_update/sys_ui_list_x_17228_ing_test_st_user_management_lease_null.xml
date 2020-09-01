@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="" relationship="" sys_domain="global" table="x_17228_ing_test_st_user_management_lease" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="x_17228_ing_test_st_user_management_lease" element="NULL" name="x_17228_ing_test_st_user_management_lease" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b69dd657db22001048c32a9a489619dd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-01-30 07:24:16</sys_created_on>
+            <sys_id>329dd657db22001048c32a9a489619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-01-30 07:24:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>email</element>
+            <list_id display_value="x_17228_ing_test_st_user_management_lease" element="NULL" name="x_17228_ing_test_st_user_management_lease" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b69dd657db22001048c32a9a489619dd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-01-30 07:24:16</sys_created_on>
+            <sys_id>ba9dd657db22001048c32a9a489619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-01-30 07:24:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>id</element>
+            <list_id display_value="x_17228_ing_test_st_user_management_lease" element="NULL" name="x_17228_ing_test_st_user_management_lease" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b69dd657db22001048c32a9a489619dd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-01-30 07:24:16</sys_created_on>
+            <sys_id>be9dd657db22001048c32a9a489619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-01-30 07:24:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>last_name</element>
+            <list_id display_value="x_17228_ing_test_st_user_management_lease" element="NULL" name="x_17228_ing_test_st_user_management_lease" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b69dd657db22001048c32a9a489619dd</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-01-30 07:24:16</sys_created_on>
+            <sys_id>b29dd657db22001048c32a9a489619e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-01-30 07:24:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_17228_ing_test_st_user_management_lease</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-01-30 07:24:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b69dd657db22001048c32a9a489619dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_17228_ing_test_st_user_management_lease</sys_name>
+            <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+            <sys_update_name>sys_ui_list_x_17228_ing_test_st_user_management_lease_null</sys_update_name>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-01-30 07:24:16</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ING Test">1fcb9293db22001048c32a9a48961991</application>
+        <file_path/>
+        <instance_id>a9bc2c46dbf79b406578f22ebf9619dc</instance_id>
+        <instance_name>dev69654</instance_name>
+        <name>sys_ui_list_x_17228_ing_test_st_user_management_lease_null</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="x_17228_ing_test_st_user_management_lease" version="2" view=""><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>name</element><list_id display_value="x_17228_ing_test_st_user_management_lease" element="NULL" name="x_17228_ing_test_st_user_management_lease" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b69dd657db22001048c32a9a489619dd</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-01-30 07:24:16</sys_created_on><sys_id>329dd657db22001048c32a9a489619df</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-01-30 07:24:16</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>email</element><list_id display_value="x_17228_ing_test_st_user_management_lease" element="NULL" name="x_17228_ing_test_st_user_management_lease" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b69dd657db22001048c32a9a489619dd</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-01-30 07:24:16</sys_created_on><sys_id>ba9dd657db22001048c32a9a489619df</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-01-30 07:24:16</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>id</element><list_id display_value="x_17228_ing_test_st_user_management_lease" element="NULL" name="x_17228_ing_test_st_user_management_lease" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b69dd657db22001048c32a9a489619dd</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-01-30 07:24:16</sys_created_on><sys_id>be9dd657db22001048c32a9a489619df</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-01-30 07:24:16</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>last_name</element><list_id display_value="x_17228_ing_test_st_user_management_lease" element="NULL" name="x_17228_ing_test_st_user_management_lease" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b69dd657db22001048c32a9a489619dd</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-01-30 07:24:16</sys_created_on><sys_id>b29dd657db22001048c32a9a489619e0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-01-30 07:24:16</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>x_17228_ing_test_st_user_management_lease</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-01-30 07:24:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b69dd657db22001048c32a9a489619dd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_17228_ing_test_st_user_management_lease</sys_name><sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package><sys_policy/><sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope><sys_update_name>sys_ui_list_x_17228_ing_test_st_user_management_lease_null</sys_update_name><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-01-30 07:24:16</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+        <payload_hash>20072885</payload_hash>
+        <record_name>User Management Lease</record_name>
+        <reverted_from/>
+        <source>53cb9293db22001048c32a9a48961994</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-01-30 07:24:17</sys_created_on>
+        <sys_id>329dd657db22001048c32a9a489619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16ff55615300000001</sys_recorded_at>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-01-30 07:24:17</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>fe9dd657a622001088a11a5140c32be1</update_guid>
+        <update_guid_history>fe9dd657a622001088a11a5140c32be1:20072885</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-01-30 07:30:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>2116b158433a4a36979163e7d07965a1</sys_id>
+        <sys_metadata>b69dd657db22001048c32a9a489619dd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_17228_ing_test_st_user_management_lease</sys_name>
+        <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+        <sys_parent display_value="">e0ecde17db22001048c32a9a48961966</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+        <sys_scope_delete display_value="">078cdc94a12f4428974460b0a2fc8f10</sys_scope_delete>
+        <sys_update_name>sys_ui_list_x_17228_ing_test_st_user_management_lease_null</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_x_17228_ing_test_st_user_management_lease_null">329dd657db22001048c32a9a489619e2</sys_update_version>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-01-30 07:30:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

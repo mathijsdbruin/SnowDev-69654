@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_vtable">
+    <sys_script_vtable action="DELETE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <cache_isolation_level>USER</cache_isolation_level>
+        <cache_strategy>CACHE_BY_QUERY</cache_strategy>
+        <cache_ttl>0</cache_ttl>
+        <name>Retrieve status user</name>
+        <script><![CDATA[/**
+ * Using `v_query`, add the rows to `v_table`
+ */
+(function executeQuery(v_table, v_query) {
+	if (v_query.isGet()) {
+		bySysId(v_table, v_query, v_query.getSysId());
+	}
+	else if (v_query.getParameter("caller_id")) {
+		byCallerId(v_table, v_query, v_query.getParameter("caller_id"));
+	}
+	else {
+		fetchAllIncidents(v_table, v_query);
+	}
+
+	/**
+	 * fetch all incidents records from the remote instance
+	 */
+	function fetchAllIncidents(v_table, v_query) {
+		// Uses RestMessage with name 'Remote Instance Incidents' and function 'All Incidents'
+		// Create a RestMessage first which calls an external REST service
+		var restMessage = new sn_ws.RESTMessageV2('Remote Instance Incidents', 'All Incidents');
+		loadData(v_table, v_query, restMessage);
+	}
+
+	/**
+	 * fetches a specific record from the remote instance with Sys Id being `sys_id`
+	 */
+	function bySysId(v_table, v_query, sys_id) {
+		// Uses RestMessage with name 'Remote Instance Incidents' and function 'By SysId'
+		var restMessage = new sn_ws.RESTMessageV2('Remote Instance Incidents', 'By SysId');
+		// sets variable 'sys_id'
+		restMessage.setStringParameterNoEscape("sys_id", sys_id);
+		loadData(v_table, v_query, restMessage);
+	}
+
+	/**
+	 * fetches records from the remote instance with Caller (caller_id) being `caller_id`
+	 */
+	function byCallerId(v_table, v_query, caller_id) {
+		var restMessage = new sn_ws.RESTMessageV2('Remote Instance Incidents', 'By CallerId');
+		restMessage.setStringParameterNoEscape("caller_id", caller_id);
+		loadData(v_table, v_query, restMessage);
+	}
+
+	/**
+	 * Adds rows to `v_table` using `restMessage`
+	 */
+	function loadData(v_table, v_query, restMessage) {
+		try {
+			var response = restMessage.execute();
+			var responseBody = response.getBody();
+			
+			// if REST call ends up in an error, set the last error message which shows up
+			// at the bottom of the list view
+			if (response.haveError()) {
+				v_query.setLastErrorMessage(response.getErrorMessage());
+				// can use gs.error() or gs.addErrorMessage() while debugging
+				// gs.debug() messages visible in session debugger
+				// gs.debug(response.getErrorMessage());
+				return;
+			}
+		} catch (ex) {
+			v_query.setLastErrorMessage(ex.message);
+			// gs.debug(ex.message);
+			return;
+		}
+
+		var transformerDefinition = getTransformerDefinition();
+		var transformer = new sn_tfrm.Transformer(transformerDefinition, responseBody);
+		// transformer parses the responseBody and extracts rows
+		while (transformer.transform()) {
+			// row is field-value map e.g. { active:"true", number: "INC0000001"}
+			var row = transformer.getRow();
+			// you may do any additional transformations to the row like GlideDuration, GlideDataTime etc. For example,
+			// row.duration = new GlideDuration(row.duration);
+
+			// finally add the row to the remote table
+			v_table.addRow(row);
+		}
+	}
+
+	/**
+	 * returns a sn_tfrm.TransformerDefinition, which defines the mapping of the table fields and elements in the response body
+	 */
+	function getTransformerDefinition() {
+		// create a rule list to map a field to its element path
+		var ruleList = new sn_tfrm.TransformerRuleList()
+			.fromJSON() // the response body is a JSON
+			// 'active' field maps to path '$.active'
+			.addRule("active", "$.active")
+			.addRule("caller_id", "$.caller_id.value")
+			.addRule("number", "$.number")
+			.addRule("short_description", "$.short_description")
+			.addRule("sys_id", "$.sys_id")
+			.addRule("updates", "$.sys_mod_count");
+
+		var recordPath = "$.result";
+		return new sn_tfrm.TransformerDefinition(ruleList, recordPath);
+	}
+
+})(v_table, v_query);]]></script>
+        <sys_class_name>sys_script_vtable</sys_class_name>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-01-30 07:39:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7940ae5bdb22001048c32a9a4896194f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Retrieve status user</sys_name>
+        <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+        <sys_update_name>sys_script_vtable_7940ae5bdb22001048c32a9a4896194f</sys_update_name>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-01-30 07:43:19</sys_updated_on>
+        <table>x_17228_ing_test_st_lease_user_management_portal</table>
+    </sys_script_vtable>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ING Test">1fcb9293db22001048c32a9a48961991</application>
+        <file_path/>
+        <instance_id>a9bc2c46dbf79b406578f22ebf9619dc</instance_id>
+        <instance_name>dev69654</instance_name>
+        <name>sys_script_vtable_7940ae5bdb22001048c32a9a4896194f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_vtable"&gt;&lt;sys_script_vtable action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;cache_isolation_level&gt;USER&lt;/cache_isolation_level&gt;&lt;cache_strategy&gt;CACHE_BY_QUERY&lt;/cache_strategy&gt;&lt;cache_ttl&gt;0&lt;/cache_ttl&gt;&lt;name&gt;Retrieve status user&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/**
+ * Using `v_query`, add the rows to `v_table`
+ */
+(function executeQuery(v_table, v_query) {
+	if (v_query.isGet()) {
+		bySysId(v_table, v_query, v_query.getSysId());
+	}
+	else if (v_query.getParameter("caller_id")) {
+		byCallerId(v_table, v_query, v_query.getParameter("caller_id"));
+	}
+	else {
+		fetchAllIncidents(v_table, v_query);
+	}
+
+	/**
+	 * fetch all incidents records from the remote instance
+	 */
+	function fetchAllIncidents(v_table, v_query) {
+		// Uses RestMessage with name 'Remote Instance Incidents' and function 'All Incidents'
+		// Create a RestMessage first which calls an external REST service
+		var restMessage = new sn_ws.RESTMessageV2('Remote Instance Incidents', 'All Incidents');
+		loadData(v_table, v_query, restMessage);
+	}
+
+	/**
+	 * fetches a specific record from the remote instance with Sys Id being `sys_id`
+	 */
+	function bySysId(v_table, v_query, sys_id) {
+		// Uses RestMessage with name 'Remote Instance Incidents' and function 'By SysId'
+		var restMessage = new sn_ws.RESTMessageV2('Remote Instance Incidents', 'By SysId');
+		// sets variable 'sys_id'
+		restMessage.setStringParameterNoEscape("sys_id", sys_id);
+		loadData(v_table, v_query, restMessage);
+	}
+
+	/**
+	 * fetches records from the remote instance with Caller (caller_id) being `caller_id`
+	 */
+	function byCallerId(v_table, v_query, caller_id) {
+		var restMessage = new sn_ws.RESTMessageV2('Remote Instance Incidents', 'By CallerId');
+		restMessage.setStringParameterNoEscape("caller_id", caller_id);
+		loadData(v_table, v_query, restMessage);
+	}
+
+	/**
+	 * Adds rows to `v_table` using `restMessage`
+	 */
+	function loadData(v_table, v_query, restMessage) {
+		try {
+			var response = restMessage.execute();
+			var responseBody = response.getBody();
+			
+			// if REST call ends up in an error, set the last error message which shows up
+			// at the bottom of the list view
+			if (response.haveError()) {
+				v_query.setLastErrorMessage(response.getErrorMessage());
+				// can use gs.error() or gs.addErrorMessage() while debugging
+				// gs.debug() messages visible in session debugger
+				// gs.debug(response.getErrorMessage());
+				return;
+			}
+		} catch (ex) {
+			v_query.setLastErrorMessage(ex.message);
+			// gs.debug(ex.message);
+			return;
+		}
+
+		var transformerDefinition = getTransformerDefinition();
+		var transformer = new sn_tfrm.Transformer(transformerDefinition, responseBody);
+		// transformer parses the responseBody and extracts rows
+		while (transformer.transform()) {
+			// row is field-value map e.g. { active:"true", number: "INC0000001"}
+			var row = transformer.getRow();
+			// you may do any additional transformations to the row like GlideDuration, GlideDataTime etc. For example,
+			// row.duration = new GlideDuration(row.duration);
+
+			// finally add the row to the remote table
+			v_table.addRow(row);
+		}
+	}
+
+	/**
+	 * returns a sn_tfrm.TransformerDefinition, which defines the mapping of the table fields and elements in the response body
+	 */
+	function getTransformerDefinition() {
+		// create a rule list to map a field to its element path
+		var ruleList = new sn_tfrm.TransformerRuleList()
+			.fromJSON() // the response body is a JSON
+			// 'active' field maps to path '$.active'
+			.addRule("active", "$.active")
+			.addRule("caller_id", "$.caller_id.value")
+			.addRule("number", "$.number")
+			.addRule("short_description", "$.short_description")
+			.addRule("sys_id", "$.sys_id")
+			.addRule("updates", "$.sys_mod_count");
+
+		var recordPath = "$.result";
+		return new sn_tfrm.TransformerDefinition(ruleList, recordPath);
+	}
+
+})(v_table, v_query);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_vtable&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mathijs.debruin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-30 07:39:54&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;7940ae5bdb22001048c32a9a4896194f&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Retrieve status user&lt;/sys_name&gt;&lt;sys_package display_value="ING Test" source="x_17228_ing_test"&gt;1fcb9293db22001048c32a9a48961991&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ING Test"&gt;1fcb9293db22001048c32a9a48961991&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_vtable_7940ae5bdb22001048c32a9a4896194f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mathijs.debruin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-30 07:43:19&lt;/sys_updated_on&gt;&lt;table&gt;x_17228_ing_test_st_lease_user_management_portal&lt;/table&gt;&lt;/sys_script_vtable&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>15067966</payload_hash>
+        <record_name>Retrieve status user</record_name>
+        <reverted_from/>
+        <source>53cb9293db22001048c32a9a48961994</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-01-30 07:43:19</sys_created_on>
+        <sys_id>71f166dbdb22001048c32a9a48961966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16ff56782490000001</sys_recorded_at>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-01-30 07:43:19</sys_updated_on>
+        <type>Remote Table</type>
+        <update_guid>f9f166db54220010c0254d57e1fae765</update_guid>
+        <update_guid_history>f9f166db54220010c0254d57e1fae765:15067966,3eb1ae5bc4220010f4722b66d3642536:-3640294,e1b1ea9b732200104f08c01393cb2071:-1026507999,6e91ea9ba9220010e31694b03c778b6c:-3640294,7b21ae5b6a2200101529ce89ebc03c12:-68522128</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-07-14 18:20:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_vtable">sys_script_vtable</sys_db_object>
+        <sys_id>07e9ea51d37c488a891c36a02394fe99</sys_id>
+        <sys_metadata>7940ae5bdb22001048c32a9a4896194f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Retrieve status user</sys_name>
+        <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+        <sys_scope_delete display_value="">078cdc94a12f4428974460b0a2fc8f10</sys_scope_delete>
+        <sys_update_name>sys_script_vtable_7940ae5bdb22001048c32a9a4896194f</sys_update_name>
+        <sys_update_version display_value="sys_script_vtable_7940ae5bdb22001048c32a9a4896194f">71f166dbdb22001048c32a9a48961966</sys_update_version>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-07-14 18:20:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>sla_days</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>ING - Set due date</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+	var days = g_form.getValue('sla_days');
+	var workStart = g_form.getValue('work_start');
+  var d = new Date();
+var g = d.getDate();	
+//  var g = workStart;
+	alert(g);
+  var a = g+days;
+  var s = d.setDate(a);
+  var n = d.toLocaleString();
+    if(g_form.isNewRecord()){
+        g_form.setValue('due_date', n);
+    }
+}
+ 
+//The following is my logic for my var names:
+//d = date
+//g = get date
+//a = add days
+//s = set date
+//n = new date]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-02-11 10:31:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0cc9f01fdbb2001048c32a9a489619cd</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>ING - Set due date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+        <sys_update_name>sys_script_client_0cc9f01fdbb2001048c32a9a489619cd</sys_update_name>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-02-11 11:07:52</sys_updated_on>
+        <table>x_17228_ing_test_workload_management</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ING Test">1fcb9293db22001048c32a9a48961991</application>
+        <file_path/>
+        <instance_id>a9bc2c46dbf79b406578f22ebf9619dc</instance_id>
+        <instance_name>dev69654</instance_name>
+        <name>sys_script_client_0cc9f01fdbb2001048c32a9a489619cd</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;sla_days&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;ING - Set due date&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+	var days = g_form.getValue('sla_days');
+	var workStart = g_form.getValue('work_start');
+  var d = new Date();
+var g = d.getDate();	
+//  var g = workStart;
+	alert(g);
+  var a = g+days;
+  var s = d.setDate(a);
+  var n = d.toLocaleString();
+    if(g_form.isNewRecord()){
+        g_form.setValue('due_date', n);
+    }
+}
+ 
+//The following is my logic for my var names:
+//d = date
+//g = get date
+//a = add days
+//s = set date
+//n = new date]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mathijs.debruin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-02-11 10:31:15&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;0cc9f01fdbb2001048c32a9a489619cd&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;ING - Set due date&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="ING Test" source="x_17228_ing_test"&gt;1fcb9293db22001048c32a9a48961991&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ING Test"&gt;1fcb9293db22001048c32a9a48961991&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_0cc9f01fdbb2001048c32a9a489619cd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mathijs.debruin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-02-11 11:07:52&lt;/sys_updated_on&gt;&lt;table&gt;x_17228_ing_test_workload_management&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1668728697</payload_hash>
+        <record_name>ING - Set due date</record_name>
+        <reverted_from/>
+        <source>fffcffb5db32001048c32a9a48961978</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-02-11 11:07:52</sys_created_on>
+        <sys_id>0bd38917dbf2001048c32a9a4896194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17033ef1a410000001</sys_recorded_at>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-02-11 11:07:52</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>83d389172bf20010eb65cba2b612de4a</update_guid>
+        <update_guid_history>83d389172bf20010eb65cba2b612de4a:1668728697,31538917e4f20010a2a3d48c885a940b:-522425256,efd289d327f20010740f542272529fa5:-649440769,609141d3f7f20010c5bd4ea10cc79d4f:-591171430,30510953b7f20010c6638072609afe48:-816571407,9cd0cd93f6f200101f604724d70fa758:1282162498,f34f3453e0f2001021a693994080c39d:212984597,3f0ffc137df200104745dea76b77f195:-678904133,21be3cdff2b20010f13dbdfece30f203:-1031851288,995df0df2fb200103e46e13a59dbb1a6:-1650823678,cf2d74df6cb200106c576c79e251e4ad:-971200194,f4fb345f9fb2001090f82f3848373106:-335327327,f67b3c5fe6b20010e8569031447712ce:-928267679</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-02-11 11:12:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>2f0ab85f40de43f88fab07c21cac3640</sys_id>
+        <sys_metadata>0cc9f01fdbb2001048c32a9a489619cd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ING - Set due date</sys_name>
+        <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+        <sys_parent display_value="Workload management">7f625c4edb72001048c32a9a489619f2</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+        <sys_scope_delete display_value="">078cdc94a12f4428974460b0a2fc8f10</sys_scope_delete>
+        <sys_update_name>sys_script_client_0cc9f01fdbb2001048c32a9a489619cd</sys_update_name>
+        <sys_update_version display_value="sys_script_client_0cc9f01fdbb2001048c32a9a489619cd">0bd38917dbf2001048c32a9a4896194a</sys_update_version>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-02-11 11:12:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

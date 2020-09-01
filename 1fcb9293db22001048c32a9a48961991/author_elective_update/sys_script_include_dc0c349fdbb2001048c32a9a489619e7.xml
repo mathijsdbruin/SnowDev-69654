@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_17228_ing_test.dateTimeUtilAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>dateTimeUtilAjax</name>
+        <script><![CDATA[var dateTimeUtilAjax = Class.create();
+
+
+dateTimeUtilAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getNowAdd: function() {
+        var firstDT = this.getParameter('sysparm_fdt');
+        var lookVar = this.getParameter('sysparm_add');
+        var dFmt = this.getParameter('sysparm_fmt');
+        if (!dFmt) {
+            dFmt = this._getDateFormat();
+        }
+        var fstDT = '';
+        if (firstDT) {
+            fstDT = this._makeDateTimeStr(firstDT, dFmt);
+        } else {
+            fstDT = this._makeDateTimeStr(gs.nowDateTime(), dFmt);
+        }
+        var conDT = this._addLookAhead(fstDT, lookVar);
+        return this._setDateTime(conDT, 'toUser', dFmt);
+    },
+    _addLookAhead: function(dateTime, lookVar, pad) {
+        var addTYPE = lookVar.split('-')[0];
+        addTYPE = addTYPE.toLowerCase();
+        var addTIME = lookVar.split('-')[1];
+        if (lookVar.split('-')[2] == 'before') {
+            addTIME = '-' + addTIME;
+        }
+        var result = new GlideDateTime(dateTime);
+        if (pad) {
+            result.addSeconds(pad);
+        }
+        if (addTYPE == 'min') {
+            result.addSeconds(addTIME * 60);
+        }
+        if (addTYPE == 'hr') {
+            result.addSeconds(addTIME * (60 * 60));
+        }
+        if (addTYPE == 'day') {
+            result.addDays(addTIME);
+        }
+        if (addTYPE == 'wk') {
+            result.addWeeks(addTIME);
+        }
+        if (addTYPE == 'mo') {
+            result.addMonths(addTIME);
+        }
+        if (addTYPE == 'yr') {
+            result.addYears(addTIME);
+        }
+        return result;
+    },
+
+    _getDateFormat: function() {
+
+
+        var usr = new GlideRecord('sys_user');
+        usr.get(gs.getUserID());
+        var usr_date = usr.date_format;
+        var sys_date = gs.getProperty('glide.sys.date_format');
+        var result = '';
+        if (!usr_date) {
+            result = sys_date;
+        } else {
+            result = usr_date;
+        }
+        return result;
+    },
+
+    _getTzFormat: function() {
+        var usr = new GlideRecord('sys_user');
+        usr.get(gs.getUserID());
+        var usr_zone = usr.time_zone;
+        var sys_zone = gs.getProperty('glide.sys.default.tz');
+        var result = '';
+        if (!usr_zone) {
+            result = sys_zone;
+        } else {
+            result = usr_zone;
+        }
+        return result;
+    },
+
+    _makeDateTimeStr: function(dateTime, dFmt) {
+        if (!dFmt) {
+            dFmt = this._getDateFormat();
+        }
+        var nowDT = new GlideDateTime();
+        var nowT = nowDT.toString().split(' ')[1];
+        var nowH = nowT.split(':')[0];
+        var nowM = nowT.split(':')[1];
+        var chkDT = dateTime;
+        var oDate = dateTime.split(' ')[0];
+        var tChk = dateTime.split(' ')[1];
+        if (typeof tChk == 'undefined') {
+            chkDT = oDate + ' ' + nowT;
+        } else {
+            var hChk = tChk.split(':')[0];
+            var mChk = tChk.split(':')[1];
+            if (typeof mChk == 'undefined') {
+                chkDT = oDate + ' ' + hChk + ':' + nowM + ':00';
+            } else {
+                var sChk = tChk.split(':')[2];
+                if (typeof sChk == 'undefined') {
+                    chkDT = oDate + ' ' + hChk + ':' + mChk + ':00';
+                }
+            }
+        }
+        return this._setDateTime(chkDT, 'toGlide', dFmt);
+    },
+    _setDateTime: function(dateTime, type, dFmt, tFmt) {
+        if (!dFmt) {
+            dFmt = this._getDateFormat();
+        }
+        if (!tFmt) {
+            tFmt = this._getTimeFormat();
+        }
+        var inputFmt = dFmt + ' ' + tFmt;
+        var inputTz = this._getTzFormat();
+        if (type == 'toUser') {
+            inputFmt = 'yyyy-MM-dd HH:mm:ss';
+            inputTz = 'GMT';
+        }
+        var input = new Packages.java.text.SimpleDateFormat(inputFmt);
+        var tzI = new Packages.java.util.TimeZone.getTimeZone(inputTz);
+        input.setTimeZone(tzI);
+        dateTime = input.parse(dateTime);
+        outputFmt = dFmt + ' ' + tFmt;
+        var outputTz = this._getTzFormat();
+        if (type == 'toGlide') {
+            outputFmt = 'yyyy-MM-dd HH:mm:ss';
+            outputTz = 'GMT';
+        }
+        var output = new Packages.java.text.SimpleDateFormat(outputFmt);
+        var tzO = new Packages.java.util.TimeZone.getTimeZone(outputTz);
+        output.setTimeZone(tzO);
+        return output.format(dateTime);
+    },
+    type: 'dateTimeUtilAjax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-02-11 10:36:12</sys_created_on>
+        <sys_id>dc0c349fdbb2001048c32a9a489619e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dateTimeUtilAjax</sys_name>
+        <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+        <sys_update_name>sys_script_include_dc0c349fdbb2001048c32a9a489619e7</sys_update_name>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-02-11 10:36:12</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ING Test">1fcb9293db22001048c32a9a48961991</application>
+        <file_path/>
+        <instance_id>a9bc2c46dbf79b406578f22ebf9619dc</instance_id>
+        <instance_name>dev69654</instance_name>
+        <name>sys_script_include_dc0c349fdbb2001048c32a9a489619e7</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_17228_ing_test.dateTimeUtilAjax&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;dateTimeUtilAjax&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var dateTimeUtilAjax = Class.create();
+
+
+dateTimeUtilAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getNowAdd: function() {
+        var firstDT = this.getParameter('sysparm_fdt');
+        var lookVar = this.getParameter('sysparm_add');
+        var dFmt = this.getParameter('sysparm_fmt');
+        if (!dFmt) {
+            dFmt = this._getDateFormat();
+        }
+        var fstDT = '';
+        if (firstDT) {
+            fstDT = this._makeDateTimeStr(firstDT, dFmt);
+        } else {
+            fstDT = this._makeDateTimeStr(gs.nowDateTime(), dFmt);
+        }
+        var conDT = this._addLookAhead(fstDT, lookVar);
+        return this._setDateTime(conDT, 'toUser', dFmt);
+    },
+    _addLookAhead: function(dateTime, lookVar, pad) {
+        var addTYPE = lookVar.split('-')[0];
+        addTYPE = addTYPE.toLowerCase();
+        var addTIME = lookVar.split('-')[1];
+        if (lookVar.split('-')[2] == 'before') {
+            addTIME = '-' + addTIME;
+        }
+        var result = new GlideDateTime(dateTime);
+        if (pad) {
+            result.addSeconds(pad);
+        }
+        if (addTYPE == 'min') {
+            result.addSeconds(addTIME * 60);
+        }
+        if (addTYPE == 'hr') {
+            result.addSeconds(addTIME * (60 * 60));
+        }
+        if (addTYPE == 'day') {
+            result.addDays(addTIME);
+        }
+        if (addTYPE == 'wk') {
+            result.addWeeks(addTIME);
+        }
+        if (addTYPE == 'mo') {
+            result.addMonths(addTIME);
+        }
+        if (addTYPE == 'yr') {
+            result.addYears(addTIME);
+        }
+        return result;
+    },
+
+    _getDateFormat: function() {
+
+
+        var usr = new GlideRecord('sys_user');
+        usr.get(gs.getUserID());
+        var usr_date = usr.date_format;
+        var sys_date = gs.getProperty('glide.sys.date_format');
+        var result = '';
+        if (!usr_date) {
+            result = sys_date;
+        } else {
+            result = usr_date;
+        }
+        return result;
+    },
+
+    _getTzFormat: function() {
+        var usr = new GlideRecord('sys_user');
+        usr.get(gs.getUserID());
+        var usr_zone = usr.time_zone;
+        var sys_zone = gs.getProperty('glide.sys.default.tz');
+        var result = '';
+        if (!usr_zone) {
+            result = sys_zone;
+        } else {
+            result = usr_zone;
+        }
+        return result;
+    },
+
+    _makeDateTimeStr: function(dateTime, dFmt) {
+        if (!dFmt) {
+            dFmt = this._getDateFormat();
+        }
+        var nowDT = new GlideDateTime();
+        var nowT = nowDT.toString().split(' ')[1];
+        var nowH = nowT.split(':')[0];
+        var nowM = nowT.split(':')[1];
+        var chkDT = dateTime;
+        var oDate = dateTime.split(' ')[0];
+        var tChk = dateTime.split(' ')[1];
+        if (typeof tChk == 'undefined') {
+            chkDT = oDate + ' ' + nowT;
+        } else {
+            var hChk = tChk.split(':')[0];
+            var mChk = tChk.split(':')[1];
+            if (typeof mChk == 'undefined') {
+                chkDT = oDate + ' ' + hChk + ':' + nowM + ':00';
+            } else {
+                var sChk = tChk.split(':')[2];
+                if (typeof sChk == 'undefined') {
+                    chkDT = oDate + ' ' + hChk + ':' + mChk + ':00';
+                }
+            }
+        }
+        return this._setDateTime(chkDT, 'toGlide', dFmt);
+    },
+    _setDateTime: function(dateTime, type, dFmt, tFmt) {
+        if (!dFmt) {
+            dFmt = this._getDateFormat();
+        }
+        if (!tFmt) {
+            tFmt = this._getTimeFormat();
+        }
+        var inputFmt = dFmt + ' ' + tFmt;
+        var inputTz = this._getTzFormat();
+        if (type == 'toUser') {
+            inputFmt = 'yyyy-MM-dd HH:mm:ss';
+            inputTz = 'GMT';
+        }
+        var input = new Packages.java.text.SimpleDateFormat(inputFmt);
+        var tzI = new Packages.java.util.TimeZone.getTimeZone(inputTz);
+        input.setTimeZone(tzI);
+        dateTime = input.parse(dateTime);
+        outputFmt = dFmt + ' ' + tFmt;
+        var outputTz = this._getTzFormat();
+        if (type == 'toGlide') {
+            outputFmt = 'yyyy-MM-dd HH:mm:ss';
+            outputTz = 'GMT';
+        }
+        var output = new Packages.java.text.SimpleDateFormat(outputFmt);
+        var tzO = new Packages.java.util.TimeZone.getTimeZone(outputTz);
+        output.setTimeZone(tzO);
+        return output.format(dateTime);
+    },
+    type: 'dateTimeUtilAjax'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mathijs.debruin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-02-11 10:36:12&lt;/sys_created_on&gt;&lt;sys_id&gt;dc0c349fdbb2001048c32a9a489619e7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;dateTimeUtilAjax&lt;/sys_name&gt;&lt;sys_package display_value="ING Test" source="x_17228_ing_test"&gt;1fcb9293db22001048c32a9a48961991&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="ING Test"&gt;1fcb9293db22001048c32a9a48961991&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_dc0c349fdbb2001048c32a9a489619e7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mathijs.debruin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-02-11 10:36:12&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1056815967</payload_hash>
+        <record_name>dateTimeUtilAjax</record_name>
+        <reverted_from/>
+        <source>fffcffb5db32001048c32a9a48961978</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-02-11 10:36:12</sys_created_on>
+        <sys_id>c79c349fdbb2001048c32a9a489619f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17033d219cf0000001</sys_recorded_at>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-02-11 10:36:12</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>039c349f4eb200103ed75baceb9dd3f9</update_guid>
+        <update_guid_history>039c349f4eb200103ed75baceb9dd3f9:1056815967</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-02-11 11:09:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>05d302ba45f14a768e19afb941420e24</sys_id>
+        <sys_metadata>dc0c349fdbb2001048c32a9a489619e7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dateTimeUtilAjax</sys_name>
+        <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+        <sys_scope_delete display_value="">078cdc94a12f4428974460b0a2fc8f10</sys_scope_delete>
+        <sys_update_name>sys_script_include_dc0c349fdbb2001048c32a9a489619e7</sys_update_name>
+        <sys_update_version display_value="sys_script_include_dc0c349fdbb2001048c32a9a489619e7">c79c349fdbb2001048c32a9a489619f9</sys_update_version>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-02-11 11:09:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="clt" table="x_17228_ing_test_sub_task" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>clt</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Groot Zakelijk</label>
+            <language>en</language>
+            <name>x_17228_ing_test_sub_task</name>
+            <sequence/>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 13:16:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a8a7500bdb32001048c32a9a48961972</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 13:16:17</sys_updated_on>
+            <value>GZ</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>clt</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Overig</label>
+            <language>en</language>
+            <name>x_17228_ing_test_sub_task</name>
+            <sequence/>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 13:16:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a7a7900bdb32001048c32a9a48961900</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 13:16:37</sys_updated_on>
+            <value>O</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>clt</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Structured</label>
+            <language>en</language>
+            <name>x_17228_ing_test_sub_task</name>
+            <sequence/>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 13:16:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1aa7500bdb32001048c32a9a48961973</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 13:16:23</sys_updated_on>
+            <value>ST</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>clt</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Zakelijk</label>
+            <language>en</language>
+            <name>x_17228_ing_test_sub_task</name>
+            <sequence/>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 13:16:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eb9754c7db32001048c32a9a48961908</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 13:16:11</sys_updated_on>
+            <value>ZA</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>clt</element>
+            <name>x_17228_ing_test_sub_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 13:16:08</sys_created_on>
+            <sys_id>24a7d4c7db32001048c32a9a489619e6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>clt</sys_name>
+            <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+            <sys_update_name>sys_choice_x_17228_ing_test_sub_task_clt</sys_update_name>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 13:16:08</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

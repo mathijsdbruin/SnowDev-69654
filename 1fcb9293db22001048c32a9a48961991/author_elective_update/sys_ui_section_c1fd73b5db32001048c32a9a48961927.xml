@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="c1fd73b5db32001048c32a9a48961927" sys_domain="global" table="x_17228_ing_test_workload_task" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-07 08:54:49</sys_created_on>
+            <sys_id>cf0fff39db32001048c32a9a48961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_workload_task" sys_domain="global" view="Default view">c1fd73b5db32001048c32a9a48961927</sys_ui_section>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-07 08:54:49</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>1</position>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-07 08:54:49</sys_created_on>
+            <sys_id>430fff39db32001048c32a9a48961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_workload_task" sys_domain="global" view="Default view">c1fd73b5db32001048c32a9a48961927</sys_ui_section>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-07 08:54:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contract_number</element>
+            <position>2</position>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-07 08:54:49</sys_created_on>
+            <sys_id>c30fff39db32001048c32a9a48961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_workload_task" sys_domain="global" view="Default view">c1fd73b5db32001048c32a9a48961927</sys_ui_section>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-07 08:54:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>customer</element>
+            <position>3</position>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-07 08:54:49</sys_created_on>
+            <sys_id>470fff39db32001048c32a9a48961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_workload_task" sys_domain="global" view="Default view">c1fd73b5db32001048c32a9a48961927</sys_ui_section>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-07 08:54:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-07 08:54:49</sys_created_on>
+            <sys_id>c70fff39db32001048c32a9a48961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_workload_task" sys_domain="global" view="Default view">c1fd73b5db32001048c32a9a48961927</sys_ui_section>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-07 08:54:49</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>stage</element>
+            <position>5</position>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-07 08:54:49</sys_created_on>
+            <sys_id>4b0fff39db32001048c32a9a48961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_workload_task" sys_domain="global" view="Default view">c1fd73b5db32001048c32a9a48961927</sys_ui_section>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-07 08:54:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>workflow</element>
+            <position>6</position>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-07 08:54:49</sys_created_on>
+            <sys_id>cb0fff39db32001048c32a9a48961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_workload_task" sys_domain="global" view="Default view">c1fd73b5db32001048c32a9a48961927</sys_ui_section>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-07 08:54:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>7</position>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-07 08:54:49</sys_created_on>
+            <sys_id>4f0fff39db32001048c32a9a48961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_workload_task" sys_domain="global" view="Default view">c1fd73b5db32001048c32a9a48961927</sys_ui_section>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-07 08:54:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>8</position>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-07 08:54:49</sys_created_on>
+            <sys_id>cf0fff39db32001048c32a9a48961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_workload_task" sys_domain="global" view="Default view">c1fd73b5db32001048c32a9a48961927</sys_ui_section>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-07 08:54:49</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>x_17228_ing_test_workload_task</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-07 08:50:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c1fd73b5db32001048c32a9a48961927</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_17228_ing_test_workload_task</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+            <sys_update_name>sys_ui_section_c1fd73b5db32001048c32a9a48961927</sys_update_name>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-07 08:50:01</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ING Test">1fcb9293db22001048c32a9a48961991</application>
+        <file_path/>
+        <instance_id>a9bc2c46dbf79b406578f22ebf9619dc</instance_id>
+        <instance_name>dev69654</instance_name>
+        <name>sys_ui_section_c1fd73b5db32001048c32a9a48961927</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="c1fd73b5db32001048c32a9a48961927" sys_domain="global" table="x_17228_ing_test_workload_task" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>0</position><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-02-07 08:54:49</sys_created_on><sys_id>cf0fff39db32001048c32a9a48961950</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_workload_task" sys_domain="global" view="Default view">c1fd73b5db32001048c32a9a48961927</sys_ui_section><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-02-07 08:54:49</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>1</position><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-02-07 08:54:49</sys_created_on><sys_id>430fff39db32001048c32a9a48961951</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_workload_task" sys_domain="global" view="Default view">c1fd73b5db32001048c32a9a48961927</sys_ui_section><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-02-07 08:54:49</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>contract_number</element><position>2</position><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-02-07 08:54:49</sys_created_on><sys_id>c30fff39db32001048c32a9a48961951</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_workload_task" sys_domain="global" view="Default view">c1fd73b5db32001048c32a9a48961927</sys_ui_section><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-02-07 08:54:49</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>customer</element><position>3</position><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-02-07 08:54:49</sys_created_on><sys_id>470fff39db32001048c32a9a48961951</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_workload_task" sys_domain="global" view="Default view">c1fd73b5db32001048c32a9a48961927</sys_ui_section><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-02-07 08:54:49</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>4</position><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-02-07 08:54:49</sys_created_on><sys_id>c70fff39db32001048c32a9a48961951</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_workload_task" sys_domain="global" view="Default view">c1fd73b5db32001048c32a9a48961927</sys_ui_section><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-02-07 08:54:49</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>stage</element><position>5</position><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-02-07 08:54:49</sys_created_on><sys_id>4b0fff39db32001048c32a9a48961951</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_workload_task" sys_domain="global" view="Default view">c1fd73b5db32001048c32a9a48961927</sys_ui_section><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-02-07 08:54:49</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>workflow</element><position>6</position><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-02-07 08:54:49</sys_created_on><sys_id>cb0fff39db32001048c32a9a48961951</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_workload_task" sys_domain="global" view="Default view">c1fd73b5db32001048c32a9a48961927</sys_ui_section><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-02-07 08:54:49</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_to</element><position>7</position><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-02-07 08:54:49</sys_created_on><sys_id>4f0fff39db32001048c32a9a48961951</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_workload_task" sys_domain="global" view="Default view">c1fd73b5db32001048c32a9a48961927</sys_ui_section><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-02-07 08:54:49</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>8</position><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-02-07 08:54:49</sys_created_on><sys_id>cf0fff39db32001048c32a9a48961951</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_workload_task" sys_domain="global" view="Default view">c1fd73b5db32001048c32a9a48961927</sys_ui_section><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-02-07 08:54:49</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_17228_ing_test_workload_task</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-02-07 08:50:01</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c1fd73b5db32001048c32a9a48961927</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_17228_ing_test_workload_task</sys_name><sys_overrides/><sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package><sys_policy/><sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope><sys_update_name>sys_ui_section_c1fd73b5db32001048c32a9a48961927</sys_update_name><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-02-07 08:50:01</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1332817551</payload_hash>
+        <record_name>Workload Task</record_name>
+        <reverted_from/>
+        <source>fffcffb5db32001048c32a9a48961978</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-02-07 08:54:49</sys_created_on>
+        <sys_id>870f7779db32001048c32a9a489619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1701edbd87d0000001</sys_recorded_at>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-02-07 08:54:49</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>030f77796a32001082a049df1c9cd4ef</update_guid>
+        <update_guid_history>030f77796a32001082a049df1c9cd4ef:-1332817551,a8fef379ba320010f6b5ddf79117ebff:324302349,8ebebb39c33200104b248cf7c1ec11fe:1563376788,94ae7f397b320010776ecb24321ce018:-1405325681,ba8ebb39d4320010b0a578bad5aa11eb:1495864582,5b6efff504320010d8abc5745b058c7a:2067588064,2d4e77396d3200103452808beaa6b526:-367835153,45fd73b5db3200100664cc6c3e5dfa2a:-450921892</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-02-07 10:18:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>00bfe4d06fd14f90847800942cf7d640</sys_id>
+        <sys_metadata>c1fd73b5db32001048c32a9a48961927</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_17228_ing_test_workload_task</sys_name>
+        <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+        <sys_parent display_value="">c41d33f5db32001048c32a9a489619ce</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+        <sys_scope_delete display_value="">078cdc94a12f4428974460b0a2fc8f10</sys_scope_delete>
+        <sys_update_name>sys_ui_section_c1fd73b5db32001048c32a9a48961927</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_c1fd73b5db32001048c32a9a48961927">870f7779db32001048c32a9a489619ef</sys_update_version>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-02-07 10:18:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

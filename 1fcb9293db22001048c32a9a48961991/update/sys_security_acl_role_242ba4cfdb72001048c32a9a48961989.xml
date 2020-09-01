@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-02-10 14:41:31</sys_created_on>
+        <sys_id>242ba4cfdb72001048c32a9a48961989</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_17228_ing_test_sub_task.x_17228_ing_test.ING_workload_user</sys_name>
+        <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+        <sys_security_acl display_value="x_17228_ing_test_sub_task">ff075cc7db32001048c32a9a4896197a</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_242ba4cfdb72001048c32a9a48961989</sys_update_name>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-02-10 14:41:31</sys_updated_on>
+        <sys_user_role display_value="x_17228_ing_test.ING_workload_user" name="x_17228_ing_test.ING_workload_user">959aac8fdb72001048c32a9a4896193e</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

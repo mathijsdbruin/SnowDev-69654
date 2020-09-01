@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>sla_days</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>ING - Set Due date based on SLA</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+        //Type appropriate comment here, and begin script below
+        var ajax = new GlideAjax('getDate');
+        ajax.addParam('sysparm_name', 'threeDays');
+        ajax.addParam('sysparm_days', g_form.getValue('sla_days'));		
+		ajax.getXMLAnswer(callBackParse);
+	}
+	
+function callBackParse(response) {
+	var date = response;
+            g_form.setValue('due_date', date);
+    }]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-02-11 11:24:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7587c197dbf2001048c32a9a489619ee</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>ING - Set Due date based on SLA</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+        <sys_update_name>sys_script_client_7587c197dbf2001048c32a9a489619ee</sys_update_name>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-02-11 13:21:26</sys_updated_on>
+        <table>x_17228_ing_test_workload_management</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

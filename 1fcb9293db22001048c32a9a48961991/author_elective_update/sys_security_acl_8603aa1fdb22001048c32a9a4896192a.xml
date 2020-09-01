@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_17228_ing_test_st_test_2</description>
+        <name>x_17228_ing_test_st_test_2</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-01-30 07:47:59</sys_created_on>
+        <sys_id>8603aa1fdb22001048c32a9a4896192a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_17228_ing_test_st_test_2</sys_name>
+        <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+        <sys_update_name>sys_security_acl_8603aa1fdb22001048c32a9a4896192a</sys_update_name>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-01-30 07:47:59</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ING Test">1fcb9293db22001048c32a9a48961991</application>
+        <file_path/>
+        <instance_id>a9bc2c46dbf79b406578f22ebf9619dc</instance_id>
+        <instance_name>dev69654</instance_name>
+        <name>sys_security_acl_8603aa1fdb22001048c32a9a4896192a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_17228_ing_test_st_test_2</description><name>x_17228_ing_test_st_test_2</name><operation display_value="create">create</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-01-30 07:47:59</sys_created_on><sys_id>8603aa1fdb22001048c32a9a4896192a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_17228_ing_test_st_test_2</sys_name><sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package><sys_policy/><sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope><sys_update_name>sys_security_acl_8603aa1fdb22001048c32a9a4896192a</sys_update_name><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-01-30 07:47:59</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>7401407</payload_hash>
+        <record_name>x_17228_ing_test_st_test_2</record_name>
+        <reverted_from/>
+        <source>53cb9293db22001048c32a9a48961994</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-01-30 07:48:00</sys_created_on>
+        <sys_id>9e03aa1fdb22001048c32a9a4896192c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16ff56bcbc70000001</sys_recorded_at>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-01-30 07:48:00</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>d603aa1f1b22001015f3486f5ed9112c</update_guid>
+        <update_guid_history>d603aa1f1b22001015f3486f5ed9112c:7401407</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-01-30 07:49:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>00a323841e0746258dded173e65a9f89</sys_id>
+        <sys_metadata>8603aa1fdb22001048c32a9a4896192a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_17228_ing_test_st_test_2</sys_name>
+        <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+        <sys_parent display_value="">9203aa1fdb22001048c32a9a48961973</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+        <sys_scope_delete display_value="">078cdc94a12f4428974460b0a2fc8f10</sys_scope_delete>
+        <sys_update_name>sys_security_acl_8603aa1fdb22001048c32a9a4896192a</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_8603aa1fdb22001048c32a9a4896192a">9e03aa1fdb22001048c32a9a4896192c</sys_update_version>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-01-30 07:49:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

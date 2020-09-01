@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_17228_ing_test.test_2_user" name="x_17228_ing_test.test_2_user">ca03ae9bdb22001048c32a9a48961941</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-01-30 07:47:58</sys_created_on>
+        <sys_id>8203ae9bdb22001048c32a9a48961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ca03ae9bdb22001048c32a9a48961941</sys_name>
+        <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+        <sys_update_name>sys_embedded_help_role_8203ae9bdb22001048c32a9a48961944</sys_update_name>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-01-30 07:47:58</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

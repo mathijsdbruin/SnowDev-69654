@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="test 2">8203aa1fdb22001048c32a9a48961924</application>
+        <filter/>
+        <name>test 2s</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_17228_ing_test.test_2_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-01-30 07:47:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0203aa1fdb22001048c32a9a48961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test 2s</sys_name>
+        <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+        <sys_update_name>sys_ui_module_0203aa1fdb22001048c32a9a48961927</sys_update_name>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-01-30 07:47:59</sys_updated_on>
+        <table>x_17228_ing_test_st_test_2</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ING Test">1fcb9293db22001048c32a9a48961991</application>
+        <file_path/>
+        <instance_id>a9bc2c46dbf79b406578f22ebf9619dc</instance_id>
+        <instance_name>dev69654</instance_name>
+        <name>sys_ui_module_0203aa1fdb22001048c32a9a48961927</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="test 2">8203aa1fdb22001048c32a9a48961924</application><filter/><name>test 2s</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>x_17228_ing_test.test_2_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-01-30 07:47:59</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0203aa1fdb22001048c32a9a48961927</sys_id><sys_mod_count>0</sys_mod_count><sys_name>test 2s</sys_name><sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package><sys_policy/><sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope><sys_update_name>sys_ui_module_0203aa1fdb22001048c32a9a48961927</sys_update_name><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-01-30 07:47:59</sys_updated_on><table>x_17228_ing_test_st_test_2</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>731896759</payload_hash>
+        <record_name>test 2s</record_name>
+        <reverted_from/>
+        <source>53cb9293db22001048c32a9a48961994</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-01-30 07:47:59</sys_created_on>
+        <sys_id>4e03aa1fdb22001048c32a9a48961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16ff56bc8440000001</sys_recorded_at>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-01-30 07:47:59</sys_updated_on>
+        <type>Module</type>
+        <update_guid>8603aa1f00220010c49b7decd0fa6229</update_guid>
+        <update_guid_history>8603aa1f00220010c49b7decd0fa6229:731896759</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-01-30 07:49:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>02ebf6f1c48c4e8080429d08a6119100</sys_id>
+        <sys_metadata>0203aa1fdb22001048c32a9a48961927</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test 2s</sys_name>
+        <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+        <sys_scope_delete display_value="">078cdc94a12f4428974460b0a2fc8f10</sys_scope_delete>
+        <sys_update_name>sys_ui_module_0203aa1fdb22001048c32a9a48961927</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_0203aa1fdb22001048c32a9a48961927">4e03aa1fdb22001048c32a9a48961929</sys_update_version>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-01-30 07:49:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

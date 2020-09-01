@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="DELETE" field="stage" table="x_17228_ing_test_workload_task" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Done</label>
+            <language>en</language>
+            <name>x_17228_ing_test_workload_task</name>
+            <sequence>4</sequence>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-07 08:56:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d95fbb79db32001048c32a9a4896199a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-07 08:56:03</sys_updated_on>
+            <value>done</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>stage</element>
+            <name>x_17228_ing_test_workload_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-07 08:55:18</sys_created_on>
+            <sys_id>da2f7379db32001048c32a9a48961994</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>stage</sys_name>
+            <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+            <sys_update_name>sys_choice_x_17228_ing_test_workload_task_stage</sys_update_name>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-07 08:55:18</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ING Test">1fcb9293db22001048c32a9a48961991</application>
+        <file_path/>
+        <instance_id>a9bc2c46dbf79b406578f22ebf9619dc</instance_id>
+        <instance_name>dev69654</instance_name>
+        <name>sys_choice_x_17228_ing_test_workload_task_stage</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="stage" table="x_17228_ing_test_workload_task" version="3"><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>stage</element><hint/><inactive>false</inactive><label>Done</label><language>en</language><name>x_17228_ing_test_workload_task</name><sequence>4</sequence><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-02-07 08:56:03</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d95fbb79db32001048c32a9a4896199a</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-02-07 08:56:03</sys_updated_on><value>done</value></sys_choice><sys_choice_set action="INSERT_OR_UPDATE"><element>stage</element><name>x_17228_ing_test_workload_task</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-02-07 08:55:18</sys_created_on><sys_id>da2f7379db32001048c32a9a48961994</sys_id><sys_mod_count>0</sys_mod_count><sys_name>stage</sys_name><sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package><sys_policy/><sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope><sys_update_name>sys_choice_x_17228_ing_test_workload_task_stage</sys_update_name><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-02-07 08:55:18</sys_updated_on></sys_choice_set></sys_choice></record_update>]]></payload>
+        <payload_hash>1967012212</payload_hash>
+        <record_name>x_17228_ing_test_workload_task.stage</record_name>
+        <reverted_from/>
+        <source>fffcffb5db32001048c32a9a48961978</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-02-07 10:18:58</sys_created_on>
+        <sys_id>f742984edb72001048c32a9a489619a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1701f28e3a70000001</sys_recorded_at>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-02-07 10:18:58</sys_updated_on>
+        <type>Choice list</type>
+        <update_guid>7342984e607200108254300505b2e0a4</update_guid>
+        <update_guid_history>7342984e607200108254300505b2e0a4:1967012212,3f42984e83720010ea8b71fd0312b6a1:947750702,f742984ee572001099b6b2f3cd3bc49f:197761424,195fbb79173200101be2f06684f5e09c:-1093293488,224fbb79aa320010b7fac89403260d99:1836003167,dc4f77793732001095c95572ab862cf7:-443807651,ad3f77793032001090dc3853375630f3:1963444955,962f7379343200102be8a2220b24ba96:-849472133</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-02-07 10:18:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_choice_set">sys_choice_set</sys_db_object>
+        <sys_id>da2f7379db32001048c32a9a48961994</sys_id>
+        <sys_metadata>da2f7379db32001048c32a9a48961994</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>stage</sys_name>
+        <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+        <sys_scope_delete display_value="">078cdc94a12f4428974460b0a2fc8f10</sys_scope_delete>
+        <sys_update_name>sys_choice_x_17228_ing_test_workload_task_stage</sys_update_name>
+        <sys_update_version display_value="sys_choice_x_17228_ing_test_workload_task_stage">f742984edb72001048c32a9a489619a4</sys_update_version>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-02-07 10:18:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

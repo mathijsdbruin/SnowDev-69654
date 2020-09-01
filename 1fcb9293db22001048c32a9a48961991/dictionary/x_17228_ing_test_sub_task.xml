@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Sub-task" max_length="40" name="x_17228_ing_test_sub_task" sizeclass="53" type="collection">
+        <element choice="1" label="CLT" max_length="40" name="clt" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Groot Zakelijk" value="GZ"/>
+                <element inactive_on_update="false" label="Overig" value="O"/>
+                <element inactive_on_update="false" label="Structured" value="ST"/>
+                <element inactive_on_update="false" label="Zakelijk" value="ZA"/>
+            </choice>
+        </element>
+        <element label="Main Task" max_length="32" name="main_task" reference="x_17228_ing_test_main_task" type="reference"/>
+        <element display="true" label="Sub-Task" max_length="200" name="sub_task" type="string"/>
+        <index name="index">
+            <element name="main_task"/>
+        </index>
+    </element>
+</database>

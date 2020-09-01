@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="fd4e52d7db22001048c32a9a489619eb" sys_domain="global" table="x_17228_ing_test_st_user_management_lease" version="3" view="Tables">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_name</element>
+            <position>0</position>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-01-30 07:27:13</sys_created_on>
+            <sys_id>3d4e52d7db22001048c32a9a489619ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_st_user_management_lease" sys_domain="global" view="515ff6d2db46001048c32a9a489619d1">fd4e52d7db22001048c32a9a489619eb</sys_ui_section>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-01-30 07:27:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email</element>
+            <position>1</position>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-01-30 07:27:13</sys_created_on>
+            <sys_id>b14e52d7db22001048c32a9a489619ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_st_user_management_lease" sys_domain="global" view="515ff6d2db46001048c32a9a489619d1">fd4e52d7db22001048c32a9a489619eb</sys_ui_section>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-01-30 07:27:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>2</position>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-01-30 07:27:13</sys_created_on>
+            <sys_id>394e52d7db22001048c32a9a489619ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_st_user_management_lease" sys_domain="global" view="515ff6d2db46001048c32a9a489619d1">fd4e52d7db22001048c32a9a489619eb</sys_ui_section>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-01-30 07:27:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>id</element>
+            <position>3</position>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-01-30 07:27:13</sys_created_on>
+            <sys_id>bd4e52d7db22001048c32a9a489619ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_st_user_management_lease" sys_domain="global" view="515ff6d2db46001048c32a9a489619d1">fd4e52d7db22001048c32a9a489619eb</sys_ui_section>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-01-30 07:27:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>x_17228_ing_test_st_user_management_lease</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-01-30 07:27:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fd4e52d7db22001048c32a9a489619eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_17228_ing_test_st_user_management_lease</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+            <sys_update_name>sys_ui_section_fd4e52d7db22001048c32a9a489619eb</sys_update_name>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-01-30 07:27:13</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Tables" name="Tables">515ff6d2db46001048c32a9a489619d1</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ING Test">1fcb9293db22001048c32a9a48961991</application>
+        <file_path/>
+        <instance_id>a9bc2c46dbf79b406578f22ebf9619dc</instance_id>
+        <instance_name>dev69654</instance_name>
+        <name>sys_ui_section_fd4e52d7db22001048c32a9a489619eb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="fd4e52d7db22001048c32a9a489619eb" sys_domain="global" table="x_17228_ing_test_st_user_management_lease" version="3" view="Tables"><sys_ui_element action="INSERT_OR_UPDATE"><element>last_name</element><position>0</position><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-01-30 07:27:13</sys_created_on><sys_id>3d4e52d7db22001048c32a9a489619ec</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_st_user_management_lease" sys_domain="global" view="515ff6d2db46001048c32a9a489619d1">fd4e52d7db22001048c32a9a489619eb</sys_ui_section><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-01-30 07:27:13</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>email</element><position>1</position><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-01-30 07:27:13</sys_created_on><sys_id>b14e52d7db22001048c32a9a489619ed</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_st_user_management_lease" sys_domain="global" view="515ff6d2db46001048c32a9a489619d1">fd4e52d7db22001048c32a9a489619eb</sys_ui_section><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-01-30 07:27:13</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>name</element><position>2</position><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-01-30 07:27:13</sys_created_on><sys_id>394e52d7db22001048c32a9a489619ed</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_st_user_management_lease" sys_domain="global" view="515ff6d2db46001048c32a9a489619d1">fd4e52d7db22001048c32a9a489619eb</sys_ui_section><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-01-30 07:27:13</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>id</element><position>3</position><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-01-30 07:27:13</sys_created_on><sys_id>bd4e52d7db22001048c32a9a489619ed</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_17228_ing_test_st_user_management_lease" sys_domain="global" view="515ff6d2db46001048c32a9a489619d1">fd4e52d7db22001048c32a9a489619eb</sys_ui_section><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-01-30 07:27:13</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_17228_ing_test_st_user_management_lease</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>mathijs.debruin</sys_created_by><sys_created_on>2020-01-30 07:27:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fd4e52d7db22001048c32a9a489619eb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_17228_ing_test_st_user_management_lease</sys_name><sys_overrides/><sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package><sys_policy/><sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope><sys_update_name>sys_ui_section_fd4e52d7db22001048c32a9a489619eb</sys_update_name><sys_updated_by>mathijs.debruin</sys_updated_by><sys_updated_on>2020-01-30 07:27:13</sys_updated_on><sys_user/><title>false</title><view display_value="Tables" name="Tables">515ff6d2db46001048c32a9a489619d1</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>1509150274</payload_hash>
+        <record_name>User Management Lease</record_name>
+        <reverted_from/>
+        <source>53cb9293db22001048c32a9a48961994</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-01-30 07:27:13</sys_created_on>
+        <sys_id>f54e1ad7db22001048c32a9a489619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16ff558c4dc0000001</sys_recorded_at>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-01-30 07:27:13</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>714e1ad706220010b536f49c74151ee2</update_guid>
+        <update_guid_history>714e1ad706220010b536f49c74151ee2:1509150274</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-01-30 07:30:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>065e32276a2f45638ff05ddcf9eab969</sys_id>
+        <sys_metadata>fd4e52d7db22001048c32a9a489619eb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_17228_ing_test_st_user_management_lease</sys_name>
+        <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+        <sys_parent display_value="">e0ecde17db22001048c32a9a48961966</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+        <sys_scope_delete display_value="">078cdc94a12f4428974460b0a2fc8f10</sys_scope_delete>
+        <sys_update_name>sys_ui_section_fd4e52d7db22001048c32a9a489619eb</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_fd4e52d7db22001048c32a9a489619eb">f54e1ad7db22001048c32a9a489619e2</sys_update_version>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-01-30 07:30:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

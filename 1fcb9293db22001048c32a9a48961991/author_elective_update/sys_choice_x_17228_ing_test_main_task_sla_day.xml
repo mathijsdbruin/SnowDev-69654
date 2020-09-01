@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="sla_day" table="x_17228_ing_test_main_task" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_day</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1</label>
+            <language>en</language>
+            <name>x_17228_ing_test_main_task</name>
+            <sequence>1</sequence>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 13:53:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3b30ec43db72001048c32a9a4896198e</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 13:53:59</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_day</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2</label>
+            <language>en</language>
+            <name>x_17228_ing_test_main_task</name>
+            <sequence>2</sequence>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 13:54:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ff40a083db72001048c32a9a489619f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 13:54:03</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_day</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>3</label>
+            <language>en</language>
+            <name>x_17228_ing_test_main_task</name>
+            <sequence>3</sequence>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 13:54:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>68506883db72001048c32a9a489619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 13:54:06</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_day</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>4</label>
+            <language>en</language>
+            <name>x_17228_ing_test_main_task</name>
+            <sequence>4</sequence>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 13:54:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a550a883db72001048c32a9a48961929</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 13:54:10</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_day</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>5</label>
+            <language>en</language>
+            <name>x_17228_ing_test_main_task</name>
+            <sequence>5</sequence>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 13:54:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5e502883db72001048c32a9a48961904</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 13:54:13</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_day</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>6</label>
+            <language>en</language>
+            <name>x_17228_ing_test_main_task</name>
+            <sequence>6</sequence>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 13:54:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d7502883db72001048c32a9a489619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 13:54:18</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_day</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>7</label>
+            <language>en</language>
+            <name>x_17228_ing_test_main_task</name>
+            <sequence>7</sequence>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 13:54:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>14606883db72001048c32a9a48961974</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 13:54:21</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_day</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>8</label>
+            <language>en</language>
+            <name>x_17228_ing_test_main_task</name>
+            <sequence>8</sequence>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 13:54:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0560a883db72001048c32a9a4896192f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 13:54:25</sys_updated_on>
+            <value>8</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_day</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>9</label>
+            <language>en</language>
+            <name>x_17228_ing_test_main_task</name>
+            <sequence>9</sequence>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 13:54:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9e60e883db72001048c32a9a48961971</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 13:54:30</sys_updated_on>
+            <value>9</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_day</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>10</label>
+            <language>en</language>
+            <name>x_17228_ing_test_main_task</name>
+            <sequence>10</sequence>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 13:54:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ec70a883db72001048c32a9a48961932</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 13:54:39</sys_updated_on>
+            <value>10</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>sla_day</element>
+            <name>x_17228_ing_test_main_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mathijs.debruin</sys_created_by>
+            <sys_created_on>2020-02-10 13:53:51</sys_created_on>
+            <sys_id>bc40ec43db72001048c32a9a48961945</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sla_day</sys_name>
+            <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+            <sys_update_name>sys_choice_x_17228_ing_test_main_task_sla_day</sys_update_name>
+            <sys_updated_by>mathijs.debruin</sys_updated_by>
+            <sys_updated_on>2020-02-10 13:53:51</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>
