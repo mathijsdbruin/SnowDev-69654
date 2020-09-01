@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>work_start</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>mathijs.debruin</sys_created_by>
+        <sys_created_on>2020-09-01 12:17:07</sys_created_on>
+        <sys_id>c36e2aa4dbc3501048c32a9a48961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>work_start</sys_name>
+        <sys_package display_value="ING Test" source="x_17228_ing_test">1fcb9293db22001048c32a9a48961991</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ING Test">1fcb9293db22001048c32a9a48961991</sys_scope>
+        <sys_update_name>sys_ui_policy_action_c36e2aa4dbc3501048c32a9a48961936</sys_update_name>
+        <sys_updated_by>mathijs.debruin</sys_updated_by>
+        <sys_updated_on>2020-09-01 12:17:07</sys_updated_on>
+        <table>x_17228_ing_test_workload_management</table>
+        <ui_policy display_value="Hide fields if 'isNewRecord'">5b0c6624dbc3501048c32a9a489619ca</ui_policy>
+        <visible>false</visible>
+    </sys_ui_policy_action>
+</record_update>
